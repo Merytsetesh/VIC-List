@@ -4,7 +4,7 @@
 # Optionally displays the listing to stdout.
 #
 #
-# Simon Ellis, 2019.
+# Copyright (C) 2019 Simon Ellis.
 
 import ReservedWords as RW
 

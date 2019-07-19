@@ -15,7 +15,7 @@ import Print as P
 
 
 ProgDir  = "Progs"
-ProgName = "Warlock"
+ProgName = "alien overun"
 
 # Load our program into memory...
 

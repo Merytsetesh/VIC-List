@@ -6,7 +6,7 @@
 # happy to be corrected. Equally, if I've missed the mark with others [urk! :-( ].
 #
 #
-# Simon Ellis, 2019.
+# Copyright (C) 2019 Simon Ellis.
 
 
 REVERSE   = 0
@@ -43,6 +43,18 @@ Special =     { "{WHI}"          : 133,
                 "{CRSR-LEFT}"    : 221,
                 "{YEL}"          : 222,
                 "{CYN}"          : 223,
+
+                "{CBM-+}"        : 102,
+                "{SHF-+}"        :  91,
+                "{CBM--}"        :  92,
+                "{SHF--}"        :  93,
+                "{CBM-UKP}"      : 104,
+                "{SHF-UKP}"      : 105,
+                "{CBM-@}"        : 100,
+                "{SHF-@}"        : 122,
+                "{CBM-*}"        :  95,
+                "{SHF-*}"        :  64,
+                "{SHF-UP-ARROW}" :  94
               }
 
 
@@ -53,39 +65,39 @@ def GetGlyph(sym):
     if sym in Special.keys():
         glyph = Special[sym]
     else:
-        if "SHF" in sym:
-            offset = 64
-        elif "CBM" in sym:
-            offset = 96
-
-        if offset > 0:
+        if "SHF" in sym or "CBM" in sym:
             c = sym[5]
+            if "SHF" in sym:
+                offset = 64
+            if "CBM" in sym:
+                offset = 96
         else:
             c = sym
 
-        glyph = 0
-        if "UKP" in sym:
-            glyph = 28
-        elif "UP-ARROW" in sym:
-            glyph = 30
-        elif "LEFT-ARROW" in sym:
-            glyph = 31
-        elif "[" in sym:
-            glyph = 27
-        elif "]" in sym:
-            glyph = 29
-        elif 64 <= ord(c) <= 90:
-            glyph = ord(c) - 64
-        elif c in " !\"#$%&'()*+,-./0123456789:;<=>?":
-            glyph = 32 + " !\"#$%&'()*+,-./0123456789:;<=>?".index(sym)
-        else:
+        if "CBM" not in sym:
             glyph = -1
+            if "UKP" in sym:
+                glyph = 28
+            elif "UP-ARROW" in sym:
+                glyph = 30
+            elif "LEFT-ARROW" in sym:
+                glyph = 31
+            elif "[" in sym:
+                glyph = 27
+            elif "]" in sym:
+                glyph = 29
+            elif 64 <= ord(c) <= 90:
+                glyph = ord(c) - 64
+            elif c in " !\"#$%&'()*+,-./0123456789:;<=>?":
+                glyph = 32 + " !\"#$%&'()*+,-./0123456789:;<=>?".index(c)
+        else:
+            glyph = " KIT G M  NQDZSPAERWHJYUO FCXVB".index(c)
 
     if glyph > -1:
         if glyph < 129 and REVERSE == 1:
             glyph += REV_BYTE
 
         if LOWERCASE == 1:
-            glyph += (LOWERCASE * LOW_BYTE)
+            glyph += LOW_BYTE
 
     return glyph + offset

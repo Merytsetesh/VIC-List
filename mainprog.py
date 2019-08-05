@@ -15,7 +15,9 @@ import Print as P
 
 
 ProgDir  = "Progs"
-ProgName = "alien overun"
+ProgName = "Flightpath737Vic"
+
+OutDir   = "Out"
 
 # Load our program into memory...
 
@@ -40,11 +42,11 @@ L.List(prog, True)
 
 # Save it as a text file.
 
-STXT.Save(prog, ProgName + ".txt")
+STXT.Save(prog, OutDir + "/" + ProgName + ".txt")
 
 # Load it again from this text file...
 
-prog2 = STXT.Load(ProgName + ".txt")
+prog2 = STXT.Load(OutDir + "/" + ProgName + ".txt")
 
 # ... and list it again.
 
@@ -52,4 +54,4 @@ L.List(prog2, True)
 
 # If you have not installed ReportLab and a CBM font, comment out the next line of code.
 
-P.Print(prog2, ProgName + ".pdf")
+P.Print(prog2, OutDir + "/" + ProgName + ".pdf")

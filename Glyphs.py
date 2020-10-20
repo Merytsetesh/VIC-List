@@ -63,7 +63,8 @@ Special =     { "{WHI}"          : 133,
                 "{CBM-*}"        :  95,
                 "{SHF-*}"        :  64,
                 "{SHF-UP-ARROW}" :  94,
-                "{CBM-UP-ARROW}" :  94
+                "{CBM-UP-ARROW}" :  94,
+                "{SHF-SPC}"      :  32
               }
 
 

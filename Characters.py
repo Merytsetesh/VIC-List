@@ -2,7 +2,7 @@
 # HRSs are contained in {...}, with the exception of [ and ], which map directly to characters.
 #
 #
-# Copyright (C) 2019 Simon Ellis.
+# Copyright (C) 2019 Merytsetesh.
 
 
 Characters = {   5 : "{WHI}",

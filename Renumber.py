@@ -5,7 +5,7 @@
 # Note that this function destructively modifies the code of the input program.
 #
 #
-# Copyright (c) 2019 Simon Ellis.
+# Copyright (c) 2019 Merytsetesh.
 
 
 # First creates a lookup table mapping current line numbers to their renumbered version. Next,

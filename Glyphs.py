@@ -6,7 +6,7 @@
 # happy to be corrected. Equally, if I've missed the mark with others [urk! :-( ].
 #
 #
-# Copyright (C) 2019 Simon Ellis.
+# Copyright (C) 2019 Merytsetesh.
 
 
 REV_BYTE  = 128

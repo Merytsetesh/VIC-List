@@ -15,7 +15,7 @@
 #   ID          Any valid ID, including strings (...$) and integers (...%).
 #
 #
-# Copyright (C) 2019 Simon Ellis.
+# Copyright (C) 2019 Merytsetesh.
 
 
 import Types as Typ

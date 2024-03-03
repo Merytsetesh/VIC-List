@@ -18,7 +18,7 @@
 # Takes a VIC-List program and generates a PDF of a listing for it.
 #
 #
-# Copyright (C) 2019 Simon Ellis.
+# Copyright (C) 2019 Merytsetesh.
 
 
 from reportlab.pdfgen import canvas

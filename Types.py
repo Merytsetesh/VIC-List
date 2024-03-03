@@ -4,7 +4,7 @@
 # Programs are stored as dictionaries: key is line number, value is a list of VIC-List tokens.
 #
 #
-# Copyright (C) 2019 Simon Ellis.
+# Copyright (C) 2019 Merytsetesh.
 
 
 class Word:

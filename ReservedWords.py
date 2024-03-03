@@ -1,7 +1,7 @@
 # Contains a list of all the reserved words in standard VIC BASIC, plus lookup functions.
 #
 #
-# Copyright (C) 2019 Simon Ellis.
+# Copyright (C) 2019 Merytsetesh.
 
 
 # List of reserved words in VIC-20 BASIC, in order of token value.

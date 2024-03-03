@@ -7,7 +7,7 @@
 # shouldn't appear in print-outs.
 #
 #
-# Copyright (C) 2019 Simon Ellis.
+# Copyright (C) 2019 Merytsetesh.
 
 
 import Types as Typ

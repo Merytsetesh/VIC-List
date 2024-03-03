@@ -4,7 +4,7 @@
 # of displaying CBM characters. (See Print.py for more details.)
 #
 #
-# Copyright (C) 2019 Simon Ellis.
+# Copyright (C) 2019 Merytsetesh.
 
 
 import Renumber as RN
@@ -14,8 +14,8 @@ import StreamTXT as STXT
 import Print as P
 
 
-ProgDir  = "Progs"
-ProgName = "Flightpath737Vic"
+ProgDir  = "Progs/Sphinx"
+ProgName = "part3a"
 
 OutDir   = "Out"
 

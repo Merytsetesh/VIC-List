@@ -1,7 +1,7 @@
 # A generic character stream for reading files.
 #
 #
-# Copyright (C) 2019 Simon Ellis.
+# Copyright (C) 2019 Merytsetesh.
 
 class CharStream:
     def __init__(self):

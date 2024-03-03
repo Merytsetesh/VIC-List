@@ -104,6 +104,9 @@ def Load(fname):
                     toks.append(["THING", CH.NumToChar(ch)])            #   in case we have something not in ASCII
 
             elif state == 1:
+                if ch == 0:
+                    state = 0
+                    cs.PushBack()
                 if ch != 34:
                     toks.append(["QCHAR", CH.NumToChar(ch)])
                 else:

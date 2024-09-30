@@ -57,8 +57,6 @@ The _Dungeon_ game remains copyright (C) Clifford Marshall and Melbourne House; 
 
 I would love your help! Contribute by forking the repo and opening pull requests.
 
-All pull requests should be submitted to the `main` branch.
-
 Thank you. :-)
 
 

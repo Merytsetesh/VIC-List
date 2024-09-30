@@ -45,12 +45,22 @@ Sample `VIC-List` output has been included.
 
 The _Dungeon_ game remains copyright (C) Clifford Marshall and Melbourne House; no intent to infringe copyright is intended.
 
-
 ---
 
 ### 5. Known issues
 
 1. Generating a PDF when a document with the same name is currently open will cause a crash.
+
+---
+
+### 6. Contributing
+
+I would love your help! Contribute by forking the repo and opening pull requests.
+
+All pull requests should be submitted to the `main` branch.
+
+Thank you. :-)
+
 
 ---
 ---
